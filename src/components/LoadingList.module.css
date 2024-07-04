@@ -1,0 +1,26 @@
+.card {
+    height: 600px;
+    border-radius: 16px;
+    border: 1px solid color-mix(in srgb, var(--main-color, #d6dcea), transparent 80%);
+
+}
+
+.cardMedia {
+    min-height: 350px;
+}
+
+.cardContent {
+    flex-grow: 1;
+}
+
+.cardTitle {
+    margin: 5px 0px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.cardDescription {
+    margin: 20px 0px;
+    height: 120px;
+    border-radius: 5px;
+}

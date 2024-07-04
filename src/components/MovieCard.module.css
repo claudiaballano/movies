@@ -1,0 +1,42 @@
+.card {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid color-mix(in srgb, var(--main-color, #d6dcea), transparent 80%);
+    border-radius: 16px;
+    background-color: #1c1f26;
+}
+
+.cardMedia {
+    min-height: 350px;
+}
+
+.cardContent {
+    flex-grow: 1;
+}
+
+.cardDescription {
+    overflow: hidden;
+    max-height: 200px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
+.cardActions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+.cardIcon {
+    color: yellow;
+}
+
+.cardRating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 10px;
+}

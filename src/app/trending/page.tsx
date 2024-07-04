@@ -1,14 +1,15 @@
 import LoadingList from "@/components/LoadingList";
 import List from "@/components/MoviesList";
+import { useTrendingMoviesList } from "@/domain/use-movie";
 import { Suspense } from "react";
-import { useUpcomingMoviesList } from "../domain/use-movie";
 
-export default async function Home() {
-  const upcomingMovies = await useUpcomingMoviesList();
-
+async function page() {
+  const trendingMovies = await useTrendingMoviesList();
   return (
     <Suspense fallback={<LoadingList />}>
-      <List moviesList={upcomingMovies} />
+      <List moviesList={trendingMovies} />;
     </Suspense>
   );
 }
+
+export default page;
