@@ -7,7 +7,7 @@ async function Page() {
   const trendingMovies = await useTrendingMoviesList();
   return (
     <Suspense fallback={<LoadingList />}>
-      <List moviesList={trendingMovies} />;
+      <List moviesList={trendingMovies} />
     </Suspense>
   );
 }
