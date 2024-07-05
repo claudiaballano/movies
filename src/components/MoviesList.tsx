@@ -1,6 +1,7 @@
 import { Grid } from "@mui/material";
 import type { Movie, MoviesList } from "../domain/types";
 import MovieCard from "./MovieCard";
+import styles from "./MoviesList.module.css";
 
 export default async function MoviesList({
   moviesList,
@@ -9,7 +10,7 @@ export default async function MoviesList({
 }) {
   return (
     <>
-      <Grid container spacing={2}>
+      <Grid container spacing={2} className={styles.container}>
         {moviesList.movies.map((movie: Movie) => (
           <Grid item key={movie.id} xs={12} sm={6} md={4} lg={2}>
             <MovieCard

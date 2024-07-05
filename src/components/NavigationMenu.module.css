@@ -3,12 +3,12 @@
 }
 
 .toolbar {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   padding: 30px
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px
 }
 
-.image{
+.image {
     width: 190px;
 }
