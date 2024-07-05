@@ -6,7 +6,7 @@ function SearchMovies() {
     <form>
       <TextField
         onInput={(e) => {
-          console.log(e.target.value);
+          console.log(e.target);
         }}
         label="Enter a movie name"
         variant="outlined"

@@ -1,8 +1,12 @@
 import { Grid } from "@mui/material";
-import { Movie, MoviesList } from "../domain/types";
+import type { Movie, MoviesList } from "../domain/types";
 import MovieCard from "./MovieCard";
 
-export default async function MoviesList({ moviesList}: {moviesList: MoviesList}) {
+export default async function MoviesList({
+  moviesList,
+}: {
+  moviesList: MoviesList;
+}) {
   return (
     <>
       <Grid container spacing={2}>

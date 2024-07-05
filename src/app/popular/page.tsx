@@ -3,7 +3,7 @@ import List from "@/components/MoviesList";
 import { usePopularMoviesList } from "@/domain/use-movie";
 import { Suspense } from "react";
 
-async function page() {
+async function Page() {
   const upcomingMovies = await usePopularMoviesList();
   return (
     <Suspense fallback={<LoadingList />}>
@@ -12,4 +12,4 @@ async function page() {
   );
 }
 
-export default page;
+export default Page;
